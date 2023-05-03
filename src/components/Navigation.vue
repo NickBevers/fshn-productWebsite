@@ -1,10 +1,9 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
     <nav>
         <div class="navigation__logo">
-            <router-link to="/"><div class="navigation__logo__image"/></router-link>
+            <router-link to="/"><div class="navigation__logo__image" /></router-link>
         </div>
 
         <ul class="navigation__links">
@@ -25,21 +24,25 @@
 </template>
 
 <style scoped>
-*{
-    font-family: 'Helvetica', sans-serif;
+* {
+    font-family: "Helvetica", sans-serif;
 }
 
-nav{
+nav {
+    box-sizing: border-box;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 clamp(1rem, 5vw, 100px);
     background-color: transparent;
     color: #fff;
+    background-color: #000;
     height: 100px;
+    width: 100%;
 }
 
-.navigation__logo__image{
+.navigation__logo__image {
     width: 100px;
     height: 36px;
     margin: 0;
@@ -50,7 +53,7 @@ nav{
     mask-size: contain;
 }
 
-.navigation__links{
+.navigation__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,15 +61,14 @@ nav{
     width: clamp(200px, 50vw, 500px);
 }
 
-.navigation__links li{
+.navigation__links li {
     padding: 0.5rem 0.8rem;
     text-decoration: none;
 }
 
-.navigation__links li a{
+.navigation__links li a {
     text-decoration: none;
     color: #fff;
     font-size: clamp(1rem, 5vw, 1.2rem);
 }
-
 </style>
