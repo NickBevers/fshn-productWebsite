@@ -54,25 +54,23 @@
 h1{
     margin-top: 0;
     margin-bottom: 2rem;
-    font-family: 'DX-rigraf';
     font-size: 5rem;
 }
 
 h2{
     margin-top: 0;
     margin-bottom: 4rem;
-    font-family: 'DX-rigraf';
 }
 
 .home__container {
     display: flex;
     flex-direction: column;
-    min-height: max(100vh, 960px);
+    min-height: var(--min-height);
     height: 100%;
 }
 
 .home__item {
-    min-height: min(100vh, 960px);
+    min-height: var(--min-height);
     height: 100%;
     padding: 1.5rem 0;
     width: 100%;
@@ -115,7 +113,7 @@ h2{
     width: 50%;
     box-sizing: border-box;
     padding: 2rem 2rem 2rem clamp(1rem, 10vw, 10rem);
-    height: min(100vh, 960px);
+    height: var(--min-height);
 }
 
 .description__image img{
@@ -160,7 +158,7 @@ h2{
 
 .contact__image{
     width: 40%;
-    height: min(100vh, 960px);
+    height: var(--min-height);
     background-image: url("../assets/images/map.png");
     background-size: cover;
     background-position: center;

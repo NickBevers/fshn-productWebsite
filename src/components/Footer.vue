@@ -45,6 +45,7 @@ footer {
     font-size: 1.125rem;
 }
 
+
 .footer__content, .footer__signature {
     padding: 0 clamp(1rem, 10vw, 10rem);
 }

@@ -12,6 +12,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+
+    --min-height: min(100vh, 960px);
 }
 
 @font-face {
@@ -46,11 +48,13 @@ body {
 h1 {
     font-size: 5em;
     line-height: 1.1;
+    font-family: 'DX-Rigraf', sans-serif;
 }
 
 h2 {
     font-size: 3em;
     line-height: 1.1;
+    font-family: 'DX-Rigraf', sans-serif;
 }
 
 button {

@@ -1,12 +1,40 @@
-<script setup></script>
+<script setup>
+    const props = defineProps({
+        light: {
+            type: Boolean,
+            default: false
+        }
+    })
+</script>
 
 <template>
-    <nav>
+    <nav v-if="!props.light">
         <div class="navigation__logo">
             <router-link to="/"><div class="navigation__logo__image" /></router-link>
         </div>
 
         <ul class="navigation__links">
+            <li>
+                <router-link to="/">Home</router-link>
+            </li>
+            <li>
+                <router-link to="/about">About</router-link>
+            </li>
+            <li>
+                <router-link to="/pricing">Pricing</router-link>
+            </li>
+            <li>
+                <router-link to="/contact">Contact</router-link>
+            </li>
+        </ul>
+    </nav>
+
+    <nav v-else class="nav--light">
+        <div class="navigation__logo">
+            <router-link to="/"><div class="navigation__logo__image navigation__logo__image--light" /></router-link>
+        </div>
+
+        <ul class="navigation__links navigation__links--light">
             <li>
                 <router-link to="/">Home</router-link>
             </li>
@@ -42,6 +70,11 @@ nav {
     width: 100%;
 }
 
+.nav--light{
+    background-color: #fff;
+    color: #000;
+}
+
 .navigation__logo__image {
     width: 100px;
     height: 36px;
@@ -52,6 +85,11 @@ nav {
     -webkit-mask: url("../assets/images/FSHN.svg") no-repeat center;
     mask-size: contain;
 }
+
+.navigation__logo__image--light {
+    background-color: #000;
+}
+
 
 .navigation__links {
     display: flex;
@@ -70,5 +108,9 @@ nav {
     text-decoration: none;
     color: #fff;
     font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+.navigation__links--light li a {
+    color: #000;
 }
 </style>
