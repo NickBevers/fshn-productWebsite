@@ -26,8 +26,8 @@ let currentYear = new Date().getFullYear();
             <!-- copyright symbol -->
             <p>&copy; {{ currentYear }} - FSHN. All rights reserved</p>
             <div class="footer__socials">
-                <a href="" class="social--instagram"><img src="../assets/icons/instagram.svg" alt="FSHN Instagram"></a>
-                <a href="" class="social--linkedin"><img src="../assets/icons/linkedin.svg" alt="FSHN Linkedin"></a>
+                <a href="https://www.instagram.com/fshn.be/" target="_blank" rel="noopener noreferrer" class="social__link social--instagram"><img src="../assets/icons/instagram.svg" alt="FSHN Instagram"></a>
+                <a href="https://www.linkedin.com/company/fshn-be/" target="_blank" rel="noopener noreferrer" class="social__link social--linkedin"><img src="../assets/icons/linkedin.svg" alt="FSHN Linkedin"></a>
             </div>
         </div>
     </footer>
@@ -43,6 +43,8 @@ footer {
     text-align: center;
     box-sizing: border-box;
     font-size: 1.125rem;
+    z-index: 10;
+    position: relative;
 }
 
 

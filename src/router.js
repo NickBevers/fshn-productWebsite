@@ -7,6 +7,9 @@ import Confirmation from './views/Confirmation.vue'
 
 export default createRouter({
     history: createWebHistory(),
+    scrollBehavior() {
+        return { top: 0 }
+    },
     routes: [
         {
             path: '/',
@@ -14,12 +17,12 @@ export default createRouter({
             component: Home
         },
         {
-            path: '/about-us',
+            path: '/about',
             name: 'about',
             component: About
         },
         {
-            path: '/contact-us',
+            path: '/contact',
             name: 'contact',
             component: Contact
         },

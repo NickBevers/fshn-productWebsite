@@ -65,12 +65,12 @@ h2{
 .home__container {
     display: flex;
     flex-direction: column;
-    min-height: var(--min-height);
+    min-height: var(--page-height);
     height: 100%;
 }
 
 .home__item {
-    min-height: var(--min-height);
+    min-height: var(--page-height);
     height: 100%;
     padding: 1.5rem 0;
     width: 100%;
@@ -80,7 +80,7 @@ h2{
 }
 
 .home__landing{
-    background-image: url("../assets/images/visual.png");
+    background-image: url("../assets/images/visual.webp");
     background-size: contain;
     background-position: right 0% bottom -5rem;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ h2{
     width: 50%;
     box-sizing: border-box;
     padding: 2rem 2rem 2rem clamp(1rem, 10vw, 10rem);
-    height: var(--min-height);
+    height: var(--page-height);
 }
 
 .description__image img{
@@ -158,7 +158,7 @@ h2{
 
 .contact__image{
     width: 40%;
-    height: var(--min-height);
+    height: var(--page-height);
     background-image: url("../assets/images/map.png");
     background-size: cover;
     background-position: center;
