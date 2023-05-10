@@ -93,7 +93,7 @@ h2{
 }
 
 .landing__text{
-    width: clamp(200px, 50vw, 520px);
+    width: clamp(200px, 90vw, 520px);
     color: #fff;
     text-align: left;
 }
@@ -110,7 +110,8 @@ h2{
 }
 
 .description__image{
-    width: 50%;
+    /* width: 50%; */
+    width: clamp(620px, 50vw, 700px);
     box-sizing: border-box;
     padding: 2rem 2rem 2rem clamp(1rem, 10vw, 10rem);
     height: var(--page-height);
@@ -136,7 +137,7 @@ h2{
 }
 
 .contact__text, .description__text{
-    padding: 0 clamp(1rem, 10vw, 10rem);
+    padding: 0 clamp(1rem, 10vw, 8rem);
     width: clamp(200px, 50vw, 700px);
     text-align: left;
 }
@@ -172,10 +173,67 @@ h2{
 }
 
 @media screen and (max-width: 1100px){
+
+    .home__item{
+        min-height: 100vh;
+        height: min(100vh, 700px);
+    }
+
     .home__landing{
         background-position: right -15rem bottom -10rem;
-        background-size: 90%;
     }
+
+    .description__image{
+        padding-left: clamp(1rem, 10vw, 3rem);
+        height: 80vh;
+    }
+
+    .description__text{
+        padding: 0 clamp(1rem, 10vw, 3rem);
+    }
+
+    .contact__image{
+        /* width: 50%; */
+        height: 80vh;
+    }
+
+    .contact__text{
+        padding: 0 0 0 clamp(1rem, 10vw, 3rem);
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .home__landing{
+        background-position: right -25rem bottom -10rem;
+    }
+
+    .description__image{
+        padding: 0 1.5rem 0 0;
+        width: clamp(200px, 40vw, 700px);
+    }
+
+    .description__text{
+        padding: 0 1.5rem 0 0;
+        width: clamp(200px, 60vw, 700px);
+    }
+}
+
+@media screen and (max-width: 960px){
+    .home__landing{
+        background-size: cover;
+    }
+
+    .contact__text{
+        width: 60%;
+    }
+
+    .contact__image{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* mobile + tablet */
 }
 
 </style>

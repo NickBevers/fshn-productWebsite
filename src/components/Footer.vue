@@ -36,7 +36,7 @@ let currentYear = new Date().getFullYear();
 <style scoped>
 footer {
     width: 100%;
-    height: clamp(5rem, 20vw, 370px);
+    height: clamp(320px, 20vw, 370px);
     background-color: #000;
     color: #fff;
     padding: 3.625rem 0;
@@ -71,7 +71,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: clamp(200px, 25vw, 480px);
+    width: clamp(350px, 25vw, 480px);
     align-items: flex-start;
 }
 
@@ -104,5 +104,20 @@ footer {
     width: 25px;
     height: 25px;
     margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 960px){
+    .footer__content, .footer__signature {
+        /* padding: 0 clamp(1rem, 10vw, 3rem); */
+        font-size: clamp(1rem, 1.5vw, 1rem);
+    }
+
+    .footer__info{
+        width: clamp(200px, 90vw, 280px);
+    }
+
+    .footer__cta {
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+    }
 }
 </style>
