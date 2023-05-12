@@ -8,11 +8,13 @@
 
     <div class="about__container">
         <div class="about__content">
-            <div class="banner"></div>
-
             <div class="about__intro">
-                <h2>What sets us apart</h2>
-                <p>FSHN is a company that combines fashion and technology to create a unique fitting experience for both shops and customers. Our goal is to provide innovative solutions that enhance the shopping experience and make the fitting process more efficient and enjoyable. We believe that technology has the power to transform the world of fashion, and we’re committed to pushing the boundaries of what's possible in this exciting field..</p>
+                <div class="banner"></div>
+    
+                <div class="about__text">
+                    <h2>What sets us apart</h2>
+                    <p>FSHN is a company that combines fashion and technology to create a unique fitting experience for both shops and customers. Our goal is to provide innovative solutions that enhance the shopping experience and make the fitting process more efficient and enjoyable. We believe that technology has the power to transform the world of fashion, and we’re committed to pushing the boundaries of what's possible in this exciting field.</p>
+                </div>
             </div>
 
             <div class="about__values">
@@ -53,6 +55,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 100px;
+    overflow-x: hidden;
 }
 
 .about__content {
@@ -61,6 +64,14 @@
     justify-content: space-around;
     align-items: center;
     width: clamp(600px, 80vw, 1600px);
+}
+
+.about__intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner{
@@ -73,22 +84,23 @@
     margin-bottom: 8.75rem;
 }
 
-.about__intro{
+.about__text{
     width: clamp(600px, 80vw, 900px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10.75rem;
+    margin-bottom: 8.75rem;
 }
 
-.about__intro h2{
+.about__text h2{
     margin-top: 0;
 }
 
-.about__intro p{
+.about__text p{
     font-weight: 400;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .about__values{
@@ -104,6 +116,7 @@
 }
 
 .value__container{
+    width: 100%;
     height: clamp(150px, 50vh, 220px);
     display: flex;
     flex-direction: row;
@@ -128,6 +141,67 @@
 .value__item p{
     margin: 0;
     
+}
+
+@media screen and (max-width: 768px){
+    .about__container{
+        padding-top: 120px;
+    }
+
+    .about__content{
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+
+    .about__intro{
+        flex-direction: column-reverse;
+    }
+
+    .banner{
+        height: clamp(200px, 50vh, 300px);
+        margin-bottom: 4rem;
+    }
+
+    .about__text{
+        margin-bottom: 3rem;
+        width: clamp(300px, 90vw, 800px);
+    }
+
+    .about__text h2{
+        margin-bottom: 1.5rem;
+    }
+
+    .about__text p{
+        margin-top: 0;
+    }
+
+    .about__values{
+        margin-bottom: 0;
+        box-sizing: border-box;
+        padding: 0 clamp(1.5rem, 5vw, 3rem);
+    }
+
+    .about__values h2{
+        margin-bottom: 1.5rem;
+    }
+
+    .value__container{
+        flex-direction: column;
+        gap: 1.5rem;
+        height: auto;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .value__item strong{
+        margin-bottom: 1rem;
+    }
+
+    .value__item{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.25rem;
+    }
 }
 
 </style>

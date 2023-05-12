@@ -209,4 +209,46 @@ strong{
     mask-image: url('../assets/icons/linkedin.svg');
 }
 
+@media screen and (max-width: 1100px) {
+    .contact__container {
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .contact__form {
+        width: 60%;
+    }
+
+    .contact__data {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact{
+        height: auto;
+    }
+
+    .contact__container {
+        flex-direction: column;
+        min-height: auto;
+        height: auto;
+        margin-top: 120px;
+    }
+
+    .contact__form {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact__data {
+        display: none;
+    }
+
+    .btn--black{
+        padding: 0.9rem 0.8rem 0.6rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+
 </style>

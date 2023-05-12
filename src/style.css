@@ -98,3 +98,17 @@ button:focus-visible {
         background-color: #f9f9f9;
     }
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        width: 100%;
+        font-size: clamp(2rem, 5vw, 4rem) !important;
+        text-align: left;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        text-align: left;
+    }
+}

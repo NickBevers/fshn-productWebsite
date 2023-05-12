@@ -67,7 +67,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    width: clamp(200px, 50vw, 600px);
+    width: clamp(200px, 55vw, 600px);
     margin-top: 7rem;
 }
 
@@ -170,6 +170,50 @@
 .btn--black{
     background-color: #000;
     color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+    .pricing__table{
+        width: clamp(200px, 90vw, 1000px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .pricing__text {
+        width: clamp(200px, 90vw, 800px);
+    }
+
+    .pricing__text h1 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pricing__container {
+        height: auto;
+    }
+
+    .pricing__text {
+        margin-bottom: 3rem;
+    }
+
+    .pricing__text p {
+        font-size: clamp(1rem, 10vw, 1.2rem);
+        text-align: left;
+    }
+
+    .pricing__table {
+        flex-direction: column;
+        gap: 2rem;
+        width: clamp(200px, 90vw, 800px);
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .pricing__tier {
+        width: 100%;
+        height: auto;
+    }
 }
 
 </style>
