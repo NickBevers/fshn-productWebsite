@@ -178,6 +178,10 @@ nav {
     width: clamp(200px, 50vw, 500px);
 }
 
+.navigation__links--mobile{
+    display: none;
+}
+
 .navigation__mobile{
     display: none;
 }

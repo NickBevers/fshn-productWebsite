@@ -153,6 +153,15 @@ h2{
     font-weight: 600;
     text-decoration: none;
     margin-top: 5em;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.btn--contact:hover{
+    background-color: #fff;
+    color: #000;
+    outline: 3px solid #000;
 }
 
 .contact__image{

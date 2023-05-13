@@ -170,6 +170,15 @@
 .btn--black{
     background-color: #000;
     color: #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.btn--black:hover{
+    background-color: #fff;
+    color: #000;
+    outline: 3px solid #000;
 }
 
 @media screen and (max-width: 1100px) {
