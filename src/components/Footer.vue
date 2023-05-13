@@ -109,7 +109,7 @@ footer {
 @media screen and (max-width: 960px){
     .footer__content, .footer__signature {
         /* padding: 0 clamp(1rem, 10vw, 3rem); */
-        font-size: clamp(1rem, 1.5vw, 1rem);
+        font-size: 1rem;
     }
 
     .footer__info{
@@ -118,6 +118,63 @@ footer {
 
     .footer__cta {
         font-size: clamp(1rem, 1.5vw, 1.25rem);
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        height: auto;
+        padding: 3rem 0 1rem;
+    }
+
+    .footer__content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0 2rem;
+    }
+
+    .footer__cta{
+        width: 100%;
+        text-align: left;
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer__info{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        gap: 2rem;
+    }
+
+    .info__contact p, .info__address p{
+        margin-top: 0.5rem;
+    }
+
+    .footer__signature{
+        padding: 0 2rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__signature p{
+        margin-top: 2.5rem;
+    }
+
+    .footer__socials{
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: -2.5rem;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .footer__content{
+        padding: 0 1.2rem;
     }
 }
 </style>
