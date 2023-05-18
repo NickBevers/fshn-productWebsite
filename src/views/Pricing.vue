@@ -207,21 +207,21 @@
     }
 
     .pricing__text p {
-        font-size: clamp(1rem, 10vw, 1.2rem);
+        font-size: clamp(0.8rem, 3.5vw, 1.2rem);
         text-align: left;
     }
 
     .pricing__table {
         flex-direction: column;
         gap: 2rem;
-        width: clamp(200px, 90vw, 800px);
-        height: auto;
+        width: clamp(300px, 90vw, 800px);
         margin-bottom: 3rem;
+        height: fit-content;
     }
 
     .pricing__tier {
-        width: 100%;
-        height: auto;
+        height: clamp(600px, 80vh, 900px);
+        width: clamp(300px, 80vw, 400px);
     }
 }
 

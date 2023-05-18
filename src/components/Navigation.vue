@@ -263,7 +263,7 @@ nav {
 
     .navigation__links--mobile li {
         display: block;
-        padding: 1.5rem 0;
+        padding: 2.5rem 0;
         z-index: 70;
         width: 10rem;
         text-align: center;
