@@ -15,13 +15,13 @@
         <div class="pricing__table">
             <div class="pricing__tier pricing--standard">
                 <div>
-                    <p class="subtitle">Standard <br> €150</p>
+                    <p class="subtitle">Standard <br> €250</p>
                     <p class="subscript">per month</p>
                 </div>
 
                 <ul class="pricing__items">
                     <li class="pricing__item pricing__item--check">2D clothing mapping</li>
-                    <li class="pricing__item pricing__item--check">Support within 3 days</li>
+                    <li class="pricing__item pricing__item--check">Support available</li>
                     <li class="pricing__item pricing__item--cross">Size assistance</li>
                     <li class="pricing__item pricing__item--cross">Upload your own logo</li>
                 </ul>
@@ -31,13 +31,13 @@
 
             <div class="pricing__tier pricing--deluxe">
                 <div>
-                    <p class="subtitle">Deluxe <br> €250</p>
+                    <p class="subtitle">Deluxe <br> €350</p>
                     <p class="subscript">per month</p>
                 </div>
 
                 <ul class="pricing__items">
                     <li class="pricing__item pricing__item--check">3D clothing mapping</li>
-                    <li class="pricing__item pricing__item--check">Support within 24h</li>
+                    <li class="pricing__item pricing__item--check">Support available</li>
                     <li class="pricing__item pricing__item--check">Size assistance</li>
                     <li class="pricing__item pricing__item--check">Upload your own logo</li>
                 </ul>
